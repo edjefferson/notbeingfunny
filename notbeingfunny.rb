@@ -25,7 +25,7 @@ result = con.query("select lasttweet from lasttweet where id=1")
 readout = result.fetch_row
 
 
-LatestTweet = NBFTweets.search("\"not being funny\" -RT", :result_type => "recent", :since_id => readout[0].to_i  ).results.reverse.each do |status|
+LatestTweet = NBFTweets.search("\"not being funny but\" -RT", :result_type => "recent", :since_id => readout[0].to_i  ).results.reverse.each do |status|
   
   puts status.text
   finaltweet = "@#{status.user.username} You are definitely not being funny."
