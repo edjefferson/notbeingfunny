@@ -3,9 +3,9 @@ require 'mysql'
 
 #heroku config:add DB_HOST= DB_USER= DB_PW= DB_NAME=
 
-#con = Mysql.new ENV['DB_HOST'],ENV['DB_USER'],ENV['DB_PW'],ENV['DB_NAME']
+con = Mysql.new ENV['DB_HOST'],ENV['DB_USER'],ENV['DB_PW'],ENV['DB_NAME']
 
-con = Mysql.new 'localhost','weatherman','weatherman','test'
+
 
 #heroku config:add R_CONSUMER_KEY= R_CONSUMER_SECRET= R_OATH_TOKEN= R_OATH_TOKEN_SECRET=
 
