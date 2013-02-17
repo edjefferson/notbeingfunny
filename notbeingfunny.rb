@@ -10,7 +10,7 @@ con = Mysql.new ENV['DB_HOST'],ENV['DB_USER'],ENV['DB_PW'],ENV['DB_NAME']
 #heroku config:add R_CONSUMER_KEY= R_CONSUMER_SECRET= R_OATH_TOKEN= R_OATH_TOKEN_SECRET=
 
 
-NBFTtweets = Twitter.configure do |config|
+NBFTweets = Twitter.configure do |config|
   config.consumer_key = ENV['R_CONSUMER_KEY']
   config.consumer_secret = ENV['R_CONSUMER_SECRET']
   config.oauth_token = ENV['R_OATH_TOKEN']
