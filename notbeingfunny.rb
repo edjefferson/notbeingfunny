@@ -33,6 +33,6 @@ LatestTweet = NBFTweets.search("\"not being funny but\" -RT", :result_type => "r
   puts status.id
   con.query("update lasttweet set lasttweet=#{status.id} where id=1")
   
-  Twitter.update(finaltweet, in_reply_to_status_id => status.id )
+  Twitter.update(finaltweet, :in_reply_to_status_id => status.id )
   
 end
